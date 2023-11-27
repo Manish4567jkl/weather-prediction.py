@@ -5,7 +5,7 @@ import pandas as pd
 from datetime import datetime, timedelta
 
 
-# Generate synthetic weather data
+
 start_date = datetime(2023, 9, 15)
 end_date = datetime(2023, 10, 15)
 date_range = [start_date + timedelta(days=x) for x in range((end_date - start_date).days + 1)]
@@ -27,7 +27,7 @@ for date in date_range:
             "month": date.strftime("%B"),
         })
 
-# Write data to a CSV file
+
 csv_file_path = "weather_data.csv"
 csv_columns = ["date", "day", "time", "temperature", "status", "month"]
 
